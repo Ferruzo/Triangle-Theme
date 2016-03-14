@@ -1,54 +1,385 @@
-/*
-Error: Invalid CSS after "#fff": expected expression (e.g. 1px, bold), was ";"
-        on line 2 of main.css
+body {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+}
 
-1: body {
-2:     background-color: #fff;
-3:     font-family: 'Lato', sans-serif;
-4:     font-weight: 300;
-5:     font-size: 14px;
-6:     line-height: 22px;
-7:     color: #000;
+.float-r {
+    float: right;
+}
 
-Backtrace:
-main.css:2
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/lexer.rb:227:in `expected!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/parser.rb:702:in `assert_done'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/parser.rb:64:in `parse'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script/parser.rb:223:in `parse'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/script.rb:27:in `parse'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:1145:in `parse_script'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:718:in `parse_property'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:689:in `parse_property_or_rule'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:655:in `parse_line'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:533:in `build_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:552:in `block in append_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:551:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:551:in `append_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:542:in `block in build_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:535:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:535:in `build_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:552:in `block in append_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:551:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:551:in `append_children'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:406:in `_to_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"#fff\": expected expression (e.g. 1px, bold), was \";\"\A         on line 2 of main.css\A \A 1: body {\A 2:     background-color: #fff;\A 3:     font-family: 'Lato', sans-serif;\A 4:     font-weight: 300;\A 5:     font-size: 14px;\A 6:     line-height: 22px;\A 7:     color: #000;"; }
+.float-l {
+    float: left;
+}
+
+a {
+    color: #a5732a;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+
+a:hover {
+    outline: none;
+    text-decoration: none;
+    color: #dab074;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2 {
+    color: #686868;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.btn-common {
+    font-size: 14px;
+    color: #797979;
+    border: 1px solid #dbb075;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 10px 25px;
+}
+
+#action .col-sm-5 {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+}
+
+.btn-common:hover, .btn-common:focus {
+    outline: none;
+    background: none;
+    box-shadow: none;
+    color: #d29948;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.padding {
+    padding: 65px 0;
+}
+
+.padding-bottom {
+    padding-bottom: 65px;
+}
+
+.padding-top {
+    padding-top: 90px;
+}
+
+.padding-right {
+    padding-right: 80px;
+}
+
+.padding-left {
+    padding-left: 80px;
+}
+
+.margin-bottom {
+    margin-bottom: 35px;
+}
+
+.mg-10 {
+    margin-top: 20px;
+}
+
+/*Header*/
+
+#header {
+    margin-bottom: 0;
+    padding: 30px 0 60px 0;
+}
+
+#header .navbar-inverse .container {
+    position: relative;
+}
+
+.social-icons ul li {
+    padding: 0 10px;
+}
+
+.social-icons ul li:last-child {
+    padding-right: 0;
+}
+
+.social-icons ul li a {
+    font-size: 1.8rem;
+    color: #d3d3d3;
+    padding: 0;
+}
+
+.social-icons ul li a:hover, .social-icons ul li a:focus {
+    color: #dbb075;
+    background: none;
+}
+
+#header .navbar {
+    background: #fff;
+    border: 0;
+    margin-bottom: 0;
+}
+
+#header .navbar-toggle {
+    margin-top: 20px;
+}
+
+#header .navbar-brand {
+    padding: 0;
+    margin-left: 0;
+}
+
+#header .navbar-brand h1, #header .navbar-brand h2 {
+    padding: 0;
+    margin: 0;
+}
+
+#header .navbar-nav.navbar-right > li a  {
+    color: #000;
+    font-size: 12px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#header .navbar-nav.navbar-right > li:last-child {
+    margin-right: 20px;
+}
+
+#header .navbar-inverse .navbar-nav li a:hover {
+    color: #d29948;
+}
+
+#header .navbar-inverse .navbar-nav li.active > a, #header .navbar-inverse .navbar-nav li.active > a:focus {
+    background-color: inherit;
+    border: 0;
+    color: #d29948;
+}
+
+#header .navbar-nav li ul.sub-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#header .navbar-nav li ul.sub-menu li a {
+    color: #818285;
+    padding: 5px 0;
+    font-size: 13px;
+    display: block;
+    text-transform: capitalize;
+}
+
+#header .navbar-nav li ul.sub-menu li:hover, #header .navbar-nav li ul.sub-menu li:focus {
+    background: #fef7ee;
+    color: #d29948;
+}
+
+#header .navbar-nav li ul.sub-menu li .active {
+    background: #fef7ee;
+    color: #d29948;
+    position: relative;
+}
+
+#header .navbar-nav li ul.sub-menu li .active i {
+    position: absolute;
+    font-size: 56px;
+    top: -13px;
+    color: #dab074;
+}
+
+#header .navbar-nav li ul.sub-menu li .active .fa-angle-right {
+    left: -3px;
+}
+
+#header .navbar-nav li ul.sub-menu li .active .fa-angle-left {
+    right: -3px;
+}
+
+#header .navbar-inverse .navbar-nav li.active > a,
+#header .navbar-inverse .navbar-nav li.active > a:focus,
+#header .navbar-nav.navbar-right li > a:hover,
+.navbar-inverse .navbar-nav > .open > a {
+    background-color: inherit;
+    border: 0;
+    color: #d29948;
+}
+
+/*home-slider*/
+
+#home-slider {
+    margin-top: 5%;
+    padding-bottom: 130px;
+    background-image: url(../images/home/slider-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#home-slider h1 {
+    margin-top: 100px;
+}
+
+.slider-house {
+    width: 65%;
+    position: absolute;
+    top: 193%;
+    left: 25%;
+}
+
+.slider-cycle {
+    position: absolute;
+    width: 25%;
+    top: 260%;
+    left: 0;
+}
+
+.slider-circle2 {
+    position: absolute;
+    top: 140%;
+    left: 35%;
+}
+
+.slider-circle1 {
+    position: absolute;
+    top: 160%;
+    left: 31%;
+}
+
+.slider-cloud1 {
+    position: absolute;
+    top: 100%;
+    left: 40%;
+}
+
+.slider-cloud2 {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
+.slider-cloud3 {
+    position: absolute;
+    top: 70%;
+    right: 15%;
+}
+
+/*SERVICES*/
+
+#services {
+    margin: 5% 0%;
+}
+
+#services .soda {
+    margin-top: -40px;
+}
+
+/*ACTION*/
+
+#action {
+    padding: 30px 0;
+    background-image: url(../images/home/tour-bg.png);
+    background-color: #FBFAFA;
+    background-size: cover;
+}
+
+.tour-button {
+    margin-top: 30px;
+}
+
+/*FEATURES*/
+
+.single-features {
+    margin: 200px 0;
+}
+
+#features p {
+    width: 90%;
+}
+
+/* CLIENTS */
+
+#clients {
+    padding: 5% 0;
+}
+
+.main-img {
+    margin: auto;
+}
+
+.clients-img {
+    margin: 10px auto;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: url(../images/home/footer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.separador {
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.footer-h2 {
+    margin-bottom: 80px;
+}
+
+#main-contact-form input {
+    border: 1px solid  #dab074;
+}
+
+#main-contact-form textarea {
+    border: 1px solid  #dab074;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #dab074;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    box-shadow: 0px 3px #a5732a;
+}
+
+.copyright-text {
+    margin-top: 100px;
+}
